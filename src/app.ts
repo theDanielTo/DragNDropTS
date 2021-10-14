@@ -9,9 +9,7 @@ class Project {
     public title: string,
     public description: string,
     public people: number,
-    public status: ProjectStatus) {
-
-  }
+    public status: ProjectStatus) {}
 }
 
 // Project State Management
@@ -22,9 +20,7 @@ class ProjectState {
   private projects: any[] = [];
   private static instance: ProjectState;
 
-  private constructor() {
-
-  }
+  private constructor() {}
 
   static getInstance() {
     if (this.instance) {
@@ -116,6 +112,13 @@ function autobind(_: any, _2: string, descriptor: PropertyDescriptor) {
   return adjDescriptor;
 }
 
+// ProjectItem
+class ProjectItem extends Component<> {
+  constructor(parameters) {
+    super();
+  }
+}
+
 // ProjectList
 class ProjectList {
   templateElement: HTMLTemplateElement;
@@ -173,6 +176,7 @@ class ProjectInput {
   templateElement: HTMLTemplateElement;
   hostElement: HTMLDivElement;
   element: HTMLFormElement;
+
   titleInputElement: HTMLInputElement;
   descriptionInputElement: HTMLInputElement;
   peopleInputElement: HTMLInputElement;
