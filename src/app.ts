@@ -124,7 +124,6 @@ abstract class Component<T extends HTMLElement, U extends HTMLElement> {
   hostElement: T;
   element: U;
 
-
   constructor(
     templateId: string,
     hostElementId: string,
