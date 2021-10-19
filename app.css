@@ -96,7 +96,9 @@ button:active {
 }
 
 .projects li:active {
-  cursor:grabbing;
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
 }
 
 .projects li h2 {
