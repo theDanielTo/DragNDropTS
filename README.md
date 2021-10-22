@@ -12,3 +12,4 @@
 * Drag & Drop API
 * Vanilla JS state management
 
+![project-manager](https://user-images.githubusercontent.com/82009814/138392311-08503f25-f7d8-423c-ac87-50f1f5ee2c75.gif)
